@@ -1,5 +1,14 @@
 extends layout
 
 block content
-  h1 Scoreboard
-  p View live scores
+  h1 Update scoreboard
+  div.scoreboard
+    form
+      select(name='team')
+        option(value='team a') Team a
+        option(value='team b') Team b
+        option(value='team c') Team c
+      div.input_text
+        input.score(type='text' placeholder='Score' maxlength="4")
+      input(type='submit' value="submit")
+        
